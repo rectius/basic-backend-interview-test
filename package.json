@@ -1,0 +1,81 @@
+{
+  "name": "asteroid-observer",
+  "version": "1.0.0",
+  "description": "A observer for near earth objects",
+  "author": "Pablo Souza <pablodss@gmail.com>",
+  "main": "./src/app.js",
+  "scripts": {
+    "feed": "babel-node ./src/bin/feed",
+    "start": "gulp serve",
+    "build": "gulp",
+    "test": "NODE_ENV=test babel-node node_modules/.bin/isparta cover _mocha -- --ui bdd --reporter spec --colors --compilers js:babel-core/register ./src/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rectius/basic-backend-interview-test.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "mongodb",
+    "mongoose",
+    "es6",
+    "mocha",
+    "REST",
+    "API"
+  ],
+  "private": false,
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "~1.16.0",
+    "compression": "^1.7.0",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "~4.14.1",
+    "express-winston": "^2.4.0",
+    "helmet": "^3.8.1",
+    "http-status": "^1.0.1",
+    "moment": "^2.18.1",
+    "mongoose": "^4.11.10",
+    "morgan": "~1.7.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-cli": "6.18.0",
+    "babel-core": "6.18.0",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-preset-es2015": "6.16.0",
+    "babel-preset-stage-2": "6.18.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "del": "^2.2.0",
+    "gulp": "3.9.1",
+    "gulp-babel": "6.1.2",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-newer": "^1.1.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "isparta": "^4.0.0",
+    "mocha": "^3.5.0",
+    "run-sequence": "^1.1.5",
+    "supertest": "^3.0.0",
+    "supertest-as-promised": "^4.0.2"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rectius/basic-backend-interview-test/issues"
+  },
+  "homepage": "https://github.com/rectius/basic-backend-interview-test#readme",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  }
+}
